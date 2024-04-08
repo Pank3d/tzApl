@@ -13,9 +13,9 @@ const Gallery = () => {
     <div className="gallery_wrapper" id="gallery">
       <h3>Галерея</h3>
       <div className="first_gallery">
-        <img src={first} />
+        <img src={first} className="first" />
         <div className="grid_img">
-          <img src={second} />
+          <img src={second} className="second" />
           <div className="grid_images">
             <img src={third} />
             <img src={fourth} />

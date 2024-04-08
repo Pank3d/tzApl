@@ -1,7 +1,6 @@
 import Gallery from "../shared/Gallery/Gallery";
 import Header from "../shared/Header/Header"
 import TitleUnderBanner from "../shared/TitleUnderBanner/TitleUnderBanner";
-
 import Footer from "../shared/Footer/Footer";
 import Library from "../shared/library/Library";
 import FormUser from "../shared/Form/Form";

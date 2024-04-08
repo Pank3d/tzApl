@@ -47,7 +47,7 @@ export default function FormUser({
               required: true,
               maxLength: 20,
               minLength: 2,
-              pattern: /^[A-Za-zА-Яа-яЁё\s]*$/, // Только текст
+              pattern: /^[A-Za-zА-Яа-яЁё\s]*$/, 
             })}
             className={errors.secondName ? "error" : ""}
           />
@@ -61,7 +61,7 @@ export default function FormUser({
               required: true,
               maxLength: 20,
               minLength: 2,
-              pattern: /^[A-Za-zА-Яа-яЁё\s]*$/, // Только текст
+              pattern: /^[A-Za-zА-Яа-яЁё\s]*$/, 
             })}
             className={errors.firstName ? "error" : ""}
           />
@@ -75,7 +75,7 @@ export default function FormUser({
               required: true,
               maxLength: 20,
               minLength: 2,
-              pattern: /^[A-Za-zА-Яа-яЁё\s]*$/, // Только текст
+              pattern: /^[A-Za-zА-Яа-яЁё\s]*$/, 
             })}
             className={errors.patronymic ? "error" : ""}
           />
