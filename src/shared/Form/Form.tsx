@@ -8,12 +8,15 @@ interface IFormInput {
   patronymic: string;
 }
 
-export default function FormUser() {
+export default function FormUser({
+  setSucces,
+}: {
+  setSucces: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   const { register, handleSubmit } = useForm<IFormInput>();
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    // Проверяем заполненность полей и устанавливаем ошибки
     const newErrors: { [key: string]: string } = {};
     for (const [key, value] of Object.entries(data)) {
       if (!value) {
@@ -22,20 +25,21 @@ export default function FormUser() {
     }
     setErrors(newErrors);
 
-    // Если ошибок нет, отправляем данные
+    
     if (Object.keys(newErrors).length === 0) {
       console.log(data);
+      setSucces(true)
     }
   };
 
   return (
-    <div className="formUserWrapper" id="form">
+    <div className="form_user_wrapper" id="form">
       <h3>Заявка на диагностику</h3>
       <p>
         Доверьте свои медицинские исследования надежным капибарам-лаборантам и
         получите качественные результаты в кратчайшие сроки!
       </p>
-      <form className="formUser" onSubmit={handleSubmit(onSubmit)}>
+      <form className="form_user" onSubmit={handleSubmit(onSubmit)}>
         <div className="inputs">
           <input
             placeholder="Фамилия"
@@ -80,7 +84,7 @@ export default function FormUser() {
           )}
         </div>
 
-        <button type="submit">
+        <button type="submit" >
           <img src={send} alt="Отправить" />
         </button>
       </form>

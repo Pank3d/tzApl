@@ -5,13 +5,13 @@ import phone from "../images/phone.svg"
 const Header = () => {
   return (
     <header className="header">
-      <div className="logoAndTitle">
+      <div className="logo_and_title">
         <img src={logo} />
         <div className="">
-          <p className="titleLogo">Современные методики диагностики</p>
+          <p className="title_logo">Современные методики диагностики</p>
         </div>
       </div>
-      <div className="containerUl">
+      <div className="container_ul">
         <nav>
           <ul className="catalog">
             <li>
@@ -26,13 +26,13 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-      <div className="containerPhone">
-        <div className="phoneImg">
+      <div className="container_phone">
+        <div className="phone_img">
           <img src={phone} alt="" />
         </div>
-        <div className="paragraphContainer">
-          <p className="phoneNumber">+7 123 456 7890</p>
-          <p className="freeCall">Звонок бесплатный</p>
+        <div className="paragraph_container">
+          <p className="phone_number">+7 123 456 7890</p>
+          <p className="free_call">Звонок бесплатный</p>
         </div>
       </div>
     </header>

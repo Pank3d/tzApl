@@ -10,24 +10,24 @@ import seven from "../images/7.svg";
 
 const Gallery = () => {
   return (
-    <div className="GalleryWrapper" id="gallery">
+    <div className="gallery_wrapper" id="gallery">
       <h3>Галерея</h3>
-      <div className="firstGallery">
+      <div className="first_gallery">
         <img src={first} />
-        <div className="gridImg">
+        <div className="grid_img">
           <img src={second} />
-          <div className="gridImages">
+          <div className="grid_images">
             <img src={third} />
             <img src={fourth} />
           </div>
         </div>
       </div>
-      <div className="secondGallery">
-        <div className="gridImagesSecondGallery">
+      <div className="second_gallery">
+        <div className="grid_images_second_gallery">
           <img src={five} />
           <img src={six} />
         </div>
-        <div className="gridImgSecondGallery">
+        <div className="grid_img_second_gallery">
         <img src={seven} />
         </div>
       </div>

@@ -1,7 +1,7 @@
 
 const TitleUnderBanner = () => {
   return (
- <div className="titleUnderBanner">
+ <div className="title_under_banner">
         <i>
           Добро пожаловать в медицинскую лабораторию KapibaraLab, где работают
           исключительно капибары — ваш надежный партнер в обеспечении
