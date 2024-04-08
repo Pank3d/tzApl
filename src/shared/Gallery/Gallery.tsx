@@ -10,7 +10,7 @@ import seven from "../images/7.svg";
 
 const Gallery = () => {
   return (
-    <div className="GalleryWrapper">
+    <div className="GalleryWrapper" id="gallery">
       <h3>Галерея</h3>
       <div className="firstGallery">
         <img src={first} />

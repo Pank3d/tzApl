@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../images/logo.svg"
 import phone from "../images/phone.svg"
 
@@ -11,11 +12,19 @@ const Header = () => {
         </div>
       </div>
       <div className="containerUl">
-        <ul className="catalog">
-          <li>Лаборатория</li>
-          <li>Галерея</li>
-          <li>Оставить заявку</li>
-        </ul>
+        <nav>
+          <ul className="catalog">
+            <li>
+              <a href="/#laba">Лаборатория</a>
+            </li>
+            <li>
+              <a href="/#gallery">Галерея</a>
+            </li>
+            <li>
+              <a href="/#form">Оставить заявку</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div className="containerPhone">
         <div className="phoneImg">

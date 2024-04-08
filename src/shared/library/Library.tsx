@@ -1,10 +1,10 @@
 import capi from "../images/capibaraForCard.svg"
 import preSend from "../images/preSend.svg"
 
-const CardWithCapi = () => {
+const Library = () => {
   return (
-    <div className="CardWithCapi">
-      <div >
+    <div className="CardWithCapi" id="laba">
+      <div>
         <h3 className="h3">Лаборатория</h3>
         <p className="h3Text">
           Наша лаборатория предлагает широкий спектр медицинских исследований,
@@ -13,13 +13,14 @@ const CardWithCapi = () => {
           диагностике и многом другом. Мы используем современное оборудование и
           методики и гарантируем точность и надежность результатов.
         </p>
-        <button className="preSend">
-            <img src={preSend} />
-        </button>
+        <a href="#form">
+          <img src={preSend} />
+        </a>
+        
       </div>
       <img src={capi} />
     </div>
   );
-}
+};
 
-export default CardWithCapi
+export default Library
