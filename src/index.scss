@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.titleUnderBanner{
+    margin-left: 260px;
+    margin-right: 260px;
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    
+    i{
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+.GalleryWrapper{
+    margin-left: 260px;
+    margin-right: 260px;
+    padding-top:96px ;
+    padding-bottom: 96px;
+    
+
+    .secondGallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 24px;        
+            .gridImagesSecondGallery{
+                display: grid;
+                margin-top: 24px;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px
+            }
+            .gridImgSecondGallery{
+                margin-top: 24px;
+            }
+
+    }
+
+    h3{
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 48px;
+    }
+
+    .firstGallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 24px;
+        .gridImages{
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px
+        }
+    }
+}
+
+.CardWithCapi{
+    background: linear-gradient(to bottom, #E9EAF9 0%, #F5F5FF 100%);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 260px;
+    padding-right: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .h3{
+        font-size:36px ;
+        font-weight: 600;
+        margin-bottom: 36px;
+    }
+    .h3Text{
+        font-size: 18px;
+        margin-bottom: 36px;
+    }
+    .preSend{
+        border: none;
+        cursor: pointer;
+    }
+
+}   
+
+.header{
+    padding-top: 55px;
+    padding-bottom: 55px;
+    margin-left: 260px;
+    margin-right: 260px;
+    display:  flex;
+    gap:126px ;
+    .containerPhone{
+        display: flex;
+        .phoneNumber{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .freeCall{
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+    .logoAndTitle{
+       display: inline-flex;
+       gap: 24px;
+        p{
+           font-size:14px ;
+           font-weight:400 ; 
+        }
+    }
+    .containerUl{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .catalog{
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+
+            li{
+                list-style: none;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
